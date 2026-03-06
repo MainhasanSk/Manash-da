@@ -1470,6 +1470,34 @@ section {
   animation-play-state: paused;
 }
 
+/* Mobile Responsive Adjustments for Logo Marquee */
+@media (max-width: 480px) {
+  .logo-track {
+    width: calc(150px * 18);
+    animation: scroll-mobile 25s linear infinite;
+  }
+
+  .logo-item {
+    width: 150px;
+    height: 70px;
+    padding: 0 15px;
+  }
+
+  .logo-item img {
+    max-height: 45px;
+  }
+}
+
+@keyframes scroll-mobile {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-150px * 9));
+  }
+}
+
 /* About Us (Company Focus) Section */
 .about-us {
   padding: 100px 0;
