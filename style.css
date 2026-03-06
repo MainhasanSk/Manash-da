@@ -1449,3 +1449,117 @@ section {
 .logo-marquee:hover .logo-track {
   animation-play-state: paused;
 }
+
+/* About Us (Company Focus) Section */
+.about-us {
+  padding: 100px 0;
+  background: var(--white);
+  position: relative;
+}
+
+.about-us .lead {
+  font-size: 1.25rem;
+  color: var(--dark);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.expertise-block {
+  margin-top: 2.5rem;
+}
+
+.expertise-block h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+  position: relative;
+  display: inline-block;
+}
+
+.expertise-block h3::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50%;
+  height: 3px;
+  background: var(--secondary);
+  border-radius: 2px;
+}
+
+.expertise-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
+}
+
+.expertise-list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 500;
+  color: var(--gray-700);
+}
+
+.expertise-list li i {
+  color: var(--primary);
+  font-size: 1.1rem;
+}
+
+.info-card {
+  background: var(--light);
+  padding: 3rem;
+  border-radius: 30px;
+  box-shadow: var(--shadow-xl);
+  border: 1px solid var(--gray-200);
+}
+
+.certification-highlight {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--gray-300);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.certification-highlight i {
+  font-size: 3rem;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.certification-highlight p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--dark);
+}
+
+.mission-footer {
+  text-align: center;
+}
+
+.mission-footer h4 {
+  font-size: 1.25rem;
+  color: var(--secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.mission-footer p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--dark);
+  font-style: italic;
+}
+
+@media (max-width: 992px) {
+  .info-card {
+    margin-top: 3rem;
+    padding: 2rem;
+  }
+}
