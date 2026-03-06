@@ -109,7 +109,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById("consultation-modal");
     const openBtns = [
         document.getElementById("open-consultation-btn"),
-        document.getElementById("open-consultation-footer-btn")
+        document.getElementById("open-consultation-footer-btn"),
+        document.getElementById("open-strategy-call-btn")
     ];
     const closeBtn = document.getElementById("close-modal-btn");
     const form = document.getElementById("consultation-form");
